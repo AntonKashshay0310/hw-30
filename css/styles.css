@@ -1,0 +1,51 @@
+.container {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    border-radius: 1px solid red;
+}
+
+@keyframes moveAndChangeColor {
+    0% {
+        bottom: 0;
+        right: 0;
+        background-color: red;
+    }
+
+    25% {
+        bottom: 0;
+        right: 550px;
+        background-color: blue;
+    }
+
+    50% {
+        bottom: 550px;
+        right: 550px;
+        background-color: green;
+    }
+
+    75% {
+        bottom: 550px;
+        right: 0;
+        background-color: yellow;
+    }
+
+    100% {
+        bottom: 0;
+        right: 0;
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    animation: moveAndChangeColor 5s infinite;
+}
